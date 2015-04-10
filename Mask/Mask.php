@@ -26,8 +26,8 @@
           function Mask ( $value , $mask , $delimiter = '#' ) {
                  if ( empty ( $value ) ) throw new InvalidArgumentException ( 'Não temos uma string para ser máscarada' );
                  if ( empty ( $mask ) ) throw new InvalidArgumentException ( 'Não foi definida uma máscara' );
-                 $data = Array( );
-                 $k = NULL;
+                 $data = [];
+                 $k = 0;
                  $value = ( string ) $value;
                  for ( $i = 0; $i <= strlen ( $mask ) - 1;  ++ $i ) {
                         if ( $mask[ $i ] == $delimiter ) {
